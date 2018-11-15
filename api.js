@@ -18,4 +18,33 @@ function getPics(v){
   
   $('select').on('change', function() {
     getPics(this.value);
+    getSoundId(); 
+
   });
+
+  
+function getSoundId(v){
+  fetch(`https://freesound.org/apiv2/search/text/?query=dog&token=hFGQ7BnEjiYnQaYkaG2282vc2RfNzpQynzQIYr1G`)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        console.log(myJson.results[0].id) 
+        getRealSound(myJson.results[0].id)       
+       
+    });
+}
+function getRealSound(id){
+  fetch(`https://freesound.org/apiv2/sounds/${id}?token=hFGQ7BnEjiYnQaYkaG2282vc2RfNzpQynzQIYr1G`)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+   
+   
+});
+
+
+}
