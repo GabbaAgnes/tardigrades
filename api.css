@@ -1,5 +1,920 @@
-.gif{
-    width:100%;
-    height: 500px;
+
+
+
+  div[class^="bubble-"] {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  div[class^="bubble-"]:after {
+    content: "";
+    position: absolute;
+    height: 85%;
+    width: 85%;
+    border-top: 1px solid black;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0) rotateZ(-45deg);
+            transform: translate3d(-50%, -50%, 0) rotateZ(-45deg);
+  }
+  
+  .bubble-1 {
+    bottom: 2px;
+    left: 89%;
+   animation: bubble-movement 4s infinite ease-in -1.9s;
+            animation: bubble-movement 4s infinite ease-in -1.9s;
+  }
+  
+  .bubble-2 {
+    bottom: 2px;
+    left: 44%;
+   animation: bubble-movement 4s infinite ease-in -2.07s;
+            animation: bubble-movement 4s infinite ease-in -2.07s;
+  }
+  
+  .bubble-3 {
+    bottom: 2px;
+    left: 63%;
+    -animation: bubble-movement 4s infinite ease-in -2.22s;
+            animation: bubble-movement 4s infinite ease-in -2.22s;
+  }
+  
+  .bubble-4 {
+    bottom: 1px;
+    left: 10%;
+    animation: bubble-movement 4s infinite ease-in -2.57s;
+            animation: bubble-movement 4s infinite ease-in -2.57s;
+  }
+  
+  .bubble-5 {
+    bottom: 2px;
+    left: 78%;
+    animation: bubble-movement 4s infinite ease-in -0.1s;
+            animation: bubble-movement 4s infinite ease-in -0.1s;
+  }
+  
+  .bubble-6 {
+    bottom: 3px;
+    left: 7%;
+    animation: bubble-movement 4s infinite ease-in -2.12s;
+            animation: bubble-movement 4s infinite ease-in -2.12s;
+  }
+  
+  .bubble-7 {
+    bottom: 2px;
+    left: 11%;
+    animation: bubble-movement 4s infinite ease-in -2.04s;
+            animation: bubble-movement 4s infinite ease-in -2.04s;
+  }
+  
+  .bubble-8 {
+    bottom: 1px;
+    left: 76%;
+    animation: bubble-movement 4s infinite ease-in -2.97s;
+            animation: bubble-movement 4s infinite ease-in -2.97s;
+  }
+  
+  .bubble-9 {
+    bottom: 4px;
+    left: 55%;
+    animation: bubble-movement 4s infinite ease-in -1.64s;
+            animation: bubble-movement 4s infinite ease-in -1.64s;
+  }
+  
+  .bubble-10 {
+    bottom: 1px;
+    left: 35%;
+    animation: bubble-movement 4s infinite ease-in -0.2s;
+            animation: bubble-movement 4s infinite ease-in -0.2s;
+  }
+  
+  .bubble-11 {
+    bottom: 1px;
+    left: 63%;
+    animation: bubble-movement 3s infinite ease-in -0.05s;
+            animation: bubble-movement 3s infinite ease-in -0.05s;
+  }
+  
+  .bubble-12 {
+    bottom: 2px;
+    left: 25%;
+    animation: bubble-movement 3s infinite ease-in -1.23s;
+            animation: bubble-movement 3s infinite ease-in -1.23s;
+  }
+  
+  .bubble-13 {
+    bottom: 10px;
+    left: 37%;
+    animation: bubble-movement 3s infinite ease-in -2.6s;
+            animation: bubble-movement 3s infinite ease-in -2.6s;
+  }
+  
+  .bubble-14 {
+    bottom: 8px;
+    left: 65%;
+    animation: bubble-movement 3s infinite ease-in -1.81s;
+            animation: bubble-movement 3s infinite ease-in -1.81s;
+  }
+  
+  .bubble-15 {
+    bottom: 7px;
+    left: 75%;
+    animation: bubble-movement 3s infinite ease-in -1.84s;
+            animation: bubble-movement 3s infinite ease-in -1.84s;
+  }
+  
+  .bubble-16 {
+    bottom: 9px;
+    left: 13%;
+   animation: bubble-movement 3s infinite ease-in -1.6s;
+            animation: bubble-movement 3s infinite ease-in -1.6s;
+  }
+  
+  .bubble-17 {
+    bottom: 10px;
+    left: 80%;
+    animation: bubble-movement 3s infinite ease-in -1.08s;
+            animation: bubble-movement 3s infinite ease-in -1.08s;
+  }
+  
+  .bubble-18 {
+    bottom: 4px;
+    left: 4%;
+   animation: bubble-movement 3s infinite ease-in -1.83s;
+            animation: bubble-movement 3s infinite ease-in -1.83s;
+  }
+  
+  .bubble-19 {
+    bottom: 8px;
+    left: 96%;
+    -webkit-animation: bubble-movement 3s infinite ease-in -0.14s;
+            animation: bubble-movement 3s infinite ease-in -0.14s;
+  }
+  
+  .bubble-20 {
+    bottom: 7px;
+    left: 18%;
+    animation: bubble-movement 3s infinite ease-in -2.89s;
+            animation: bubble-movement 3s infinite ease-in -2.89s;
+  }
+  
+ 
+  @-webkit-keyframes bubble-movement {
+    0% {
+      transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+      height: 1px;
+      width: 1px;
+    }
+    100% {
+      transform: translate3d(-50%, -500px, 0);
+              transform: translate3d(-50%, -500px, 0);
+      height: 25px;
+      width: 25px;
+    }
+  }
+  @keyframes bubble-movement {
+    0% {
+      transform: translate3d(-50%, 0, 0);
+              transform: translate3d(-50%, 0, 0);
+      height: 1px;
+      width: 1px;
+    }
+    100% {
+     transform: translate3d(-50%, -500px, 0);
+              transform: translate3d(-50%, -500px, 0);
+      height: 25px;
+      width: 25px;
+    }
+  }
+  
+
+
+* {
+    box-sizing: border-box;
+    border:0.25px #D46363 solid;
+    box-shadow: 5px 4px 0px #D46363;
+    
+  
+}
+
+form, label{
+  border:none;
+  box-shadow: none;
+}
+
+/* for the placeholder text, do an animation with typing out effect*/
+/*.pic{
+    height:30px;*/
+   /* width:30px;
+    float: auto;
+    font-size:40px;
+    transform: translate(0,0);
+
+}*/
+
+/*.pic:before{
+    content:'';
+    height:200px;
+    width:200px;
+    top:-10px;
+    left:-10px;
+    z-index:-1;
+
+}
+
+
+.pic:after{
+    content:'';
+    height:200px;
+    width:200px;
+    top:210px;
+    left:310px;
+    z-index:-1;
+
+}
+
+.pic:hover{
+    cursor:pointer;
+}
+.pic img{
+    position: relative;
+    transform: translate(0,0);
+    transition: all .4s;
+    padding-left: 4px;
+    /* ???????   why?????    border-top-color:#FF0080;
+    border-bottom-color: #FF0080;
+}
+.pic:hover img{
+    height:95%;
+    width:95%;   
+}*/
+
+
+
+
+body {
+    font-family: 'VT323', monospace;
+    padding: 5px;
+    /*background: black;*/
+    /*border: 2px red;*/
+}
+
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: red;
+    color: black;
+}
+
+
+.leftcolumn {   
+    float: left;
+    width: 68%;
+  padding-top:0px;
+}
+
+label{
+  font-size: 25px;
+}
+
+label:hover{
+   background:whitesmoke; 
+}
+
+#profile{
+  height:auto;
+  max-width:100%;
+}
+
+.row{
+  border:none;
+  box-shadow: none;
+
+}
+
+.leftcolumn, .rightcolumn{
+  border:none;
+  box-shadow: none;
+}
+
+/* below box1 background color has to be the same as @media (min-width: 1150px)'s background
+to make the sun seems to float in an entire background*/
+#box1 {
+  background: green;
+  
+}
+
+
+.rightcolumn {
+    float: right;
+    width: 30%;
+   
+    
+    padding-left: 8px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* card includes backgound color for all individual boxes, since i have the leftcolume top part
+under .box1, i changed it's background to green. actually should just change .card color to 
+the @media (min-width: 1150px) color */
+.card {
+    background-color: rgb(116, 116, 62);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* for the website description, maybe use blingking effect*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 320px){
+  body{
+     background: #108dc7; 
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7); 
+    background: linear-gradient(to right, #ef8e38, #108dc7); 
+  }
+}
+
+@media (min-width: 450px){
+  body{background: #000000;  
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000); 
+    background: linear-gradient(to right, #0f9b0f, #000000); 
+  }
+}
+
+@media (min-width: 600px){
+  body{
+    background: #FFAFBD;  
+        background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  
+        background: linear-gradient(to right, #ffc3a0, #FFAFBD); 
+  }
+}
+
+@media (min-width: 700px){
+  body{
+     background: #108dc7; 
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7); 
+    background: linear-gradient(to right, #ef8e38, #108dc7); 
+  }
+}
+
+@media (min-width: 800px) {
+  body{
+    background: #E8CBC0; 
+        background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+        background: linear-gradient(to right, #636FA4, #E8CBC0); 
+  }
+}
+
+@media (min-width: 950px){
+body{
+  
+  background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
+}
+}
+
+
+/* below backgound color should be that whiteish pink color, set as the same color
+as the heading animation's background*/
+@media (min-width: 1150px){
+  
+  body{
+   background:rgb(228, 154, 166);
+
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+   color: #D46363;
+}
+
+
+.mySlides {
+  display: none;
+  height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+body {
+    font-family: 'VT323', monospace;
+    padding: 5px;
+    /*background: black;*/
+}
+
+
+.header {
+    padding: 0px;
+    text-align: center;
+    background:#FCD9BD;
+}
+
+
+section{
+    background:#FCD9BD;
+    height:0px;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+    
+  }
+  
+  #iu{
+    position:absolute;
+    top:30%;
+    left:50%;
+    width: 177px;
+    height:177px;
+    margin: -200px 0 0 -160px;
+    border: none;
+    box-shadow: none;
+   }
+  
+  #iu .header{
+    position:absolute;
+    top:15%;
+    left:50%;
+    width:140px;
+    height:70px;
+    background:#D46363;
+    margin: -10px 0 0 -10px;
+    border-radius: 70px 70px 0 0;
+    z-index:999;
+    filter: blur(1px) contrast(15);
+  }
+  
+  #iu .sea{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:1px;
+    height:1px;
+    margin: -2px 0 0 -0px;
+    background:#FCD9BD;
+    filter:blur(2px) contrast(5);
+    
+  }
+  
+  #iu .sea .wave{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:141px;
+    height:20px;
+    margin: -10px 0 0 -11px;
+    background: #D46363;
+    border-radius: 100%;
+   }
+  
+  #iu .sea .wave:nth-child(2){
+    animation: wave 2000ms infinite linear -500ms;
+  }
+  #iu .sea .wave:nth-child(3){
+    animation: wave 2000ms infinite linear -1000ms;
+  }
+  #iu .sea .wave:nth-child(4){
+    animation: wave 2000ms infinite linear -1200ms;
+  }
+  #iu .sea .wave:nth-child(5){
+    animation: wave 2000ms infinite linear -1380ms;
+  }
+
+  
+  @keyframes wave{
+    0%{
+       transform: translateY(0) scale(1) rotateZ(0);
+    }
+     50%{
+       transform: translateY(12px) scale(0.5) rotateZ(3deg);
+    }
+     100%{
+       transform: translateY(20px) scale(0) rotateZ(-30deg);
+    }
+  }
+
+.topnav {
+    overflow: hidden;
+    background: #FCD9BD;
+    border: none;
+    box-shadow: none;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #D46363;
+    text-align: none;
+    font-size: 28px;
+      
+  
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:nth-child(2) {
+    float: right;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.leftcolumn {   
+    float: left;
+    width: 68%;
+  padding-top:0px;
+}
+
+
+/* below box1 background color has to be the same as @media (min-width: 1150px)'s background
+to make the sun seems to float in an entire background*/
+#box1 {
+  background:#FCD9BD;
+  border:0.25px #D46363 solid;
+  border-top:none;
+  box-shadow: 5px 4px 0px #D46363;
+  
+}
+#box2 {
+    background:#FCD9BD;
+    border:0.25px #D46363 solid;
+   box-shadow: 5px 4px 0px #D46363;
+   height:auto;
+    
+  }
+
+  #box3 {
+    background:#FCD9BD;
+    border:0.25px #D46363 solid;
+   box-shadow: 5px 4px 0px #D46363;
+    
+  }
+
+  #results {
+    background:#FCD9BD;
+    border:0.25px #D46363 solid;
+   box-shadow: 5px 4px 0px #D46363;
+    
+  }
+
+  #results,h3{
+    border:none;
+    box-shadow: none;
+  }
+  #results, a{
+    border:none;
+    box-shadow: none;
+
+  }
+  #results, li{
+    border:none;
+    box-shadow: none;
+
+  }
+
+  #myinfo {
+    background:#FCD9BD;
+    border:0.25px #D46363 solid;
+   box-shadow: 5px 4px 0px #D46363;
+    
+  }
+ 
+  #myinfo, h2{
+    border:none;
+    box-shadow: none;
+  }
+
+  .footer {
+    background:#FCD9BD;
+    border:0.25px #D46363 solid;
+   box-shadow: 5px 4px 0px #D46363;
+    
+  }
+.rightcolumn {
+    float: right;
+    width: 30%;
+   
+    
+    padding-left: 8px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #FCD9BD;
+    width: 100%;
+    padding: 20px;
+    border:none;
+    box-shadow: none;
+}
+
+/* card includes backgound color for all individual boxes, since i have the leftcolume top part
+under .box1, i changed it's background to green. actually should just change .card color to 
+the @media (min-width: 1150px) color */
+.card {
+    background-color: #FCD9BD;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* for the website description, maybe use blingking effect*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #FCD9BD;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.footer,h1,h4,p{
+  border:none;
+  box-shadow: none;
+
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 320px){
+  body{
+     background: #108dc7; 
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7); 
+    background: linear-gradient(to right, #ef8e38, #108dc7); 
+  }
+}
+
+@media (min-width: 450px){
+  body{background: #000000;  
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000); 
+    background: linear-gradient(to right, #0f9b0f, #000000); 
+  }
+}
+
+@media (min-width: 600px){
+  body{
+    background: #FFAFBD;  
+        background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  
+        background: linear-gradient(to right, #ffc3a0, #FFAFBD); 
+  }
+}
+
+@media (min-width: 700px){
+  body{
+     background: #108dc7; 
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7); 
+    background: linear-gradient(to right, #ef8e38, #108dc7); 
+  }
+}
+
+@media (min-width: 800px) {
+  body{
+    background: #E8CBC0; 
+        background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+        background: linear-gradient(to right, #636FA4, #E8CBC0); 
+  }
+}
+
+@media (min-width: 950px){
+body{
+  
+  background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
+}
+}
+
+
+/* below backgound color should be that whiteish pink color, set as the same color
+as the heading animation's background*/
+@media (min-width: 1150px){
+  
+  body{
+    
+   background:#FCD9BD;
+
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+.numbertext{
+   color: #D46363;
+
+
+}
+
+#earth{
+  height: auto;
+  max-width: 100%;
+  border:none;
+    box-shadow: none
+
+}
+
+#yousure{
+   font-size: 28px;
+   animation: blink 2s infinite; 
+   background: yellowgreen;
+}
+
+@keyframes blink {
+  0% { opacity: 1.0;}
+  50% { opacity: 0.0;}
+  100% { opacity: 1.0;}
+
+}
+
+#demo, #displaymessage p{
+    font-size:25px;
+    font-weight: bold;
+
+}
+
+#getlonglat{
+    background: #000000;
+    font-size: 27px;
+
+}
+
+#piccontainer span.dot{
+  border: none;
+  box-shadow: none;
+
+}
+
+#video{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#video:hover{
+  font-size: 26px;
+  font-weight: bolder;
+  color: rgb(187, 68, 68);
+  background:rgb(226, 181, 83);
+
+}
+
+video{
+    max-width:100%;
+    height:auto;
+    border: none;
+    box-shadow: none;
+}
+
+.numbertext{
+   font-size: 16px;
 
 }
