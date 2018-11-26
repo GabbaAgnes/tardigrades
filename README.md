@@ -7,3 +7,13 @@ This is a profile page of one particular tardigrade who is looking for someone t
 
 ## Screenshots
 ### Click to display the video of explanation…
+![](picture/1.png)
+
+### Choose one location:
+![](picture/2.png)
+
+### Instruction for meet up pops up:
+![](picture/3.png)
+
+## Built With
+### HTML/CSS/JavaScript/jQuery
