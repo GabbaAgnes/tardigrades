@@ -1,4 +1,4 @@
-
+/*only fetching 3 gifs for design purposes, query value and amount limit are hard-coded.  */
 function displayResults(responseJson){
   console.log(responseJson);
   $('#tardiresults-list').empty();
@@ -17,8 +17,7 @@ fetch(`https://api.giphy.com/v1/gifs/search?api_key=IFi4RzT7NxvWjFC845z185zLEwjf
 
 
 
-
-
+/*This is only for fetching pictures with the changing query value, specified within input. */
 function getPics(v){
   fetch(`https://api.unsplash.com/search/photos?query=${v}&client_id=26466f28b131dd4faf1de40f6fdad48db8620e6172ff77f8c0b459e6ea421d2f`)
       .then(function(response) {
@@ -46,6 +45,7 @@ function getPics(v){
     });
 }  
 
+/* this.value corresponds to each value of the input, */
 $('input').on('change', function() {
     getPics(this.value);
     console.log(this.value);
@@ -54,6 +54,8 @@ $('input').on('change', function() {
         latitude:places[this.value].lat,longitude:places[this.value].long
       }
     }
+
+    /*showPosition function is specified later when fetching sunset time data. */
     showPosition(obj);
 });
 
@@ -87,7 +89,9 @@ let places={
 
 var x = document.getElementById("demo");
 
-
+/* sets the HTML markup contained within the element.
+This is to display, under"demo", the latitude and longitude respectively, these in ${}
+are the varied values we input in the previous section to change the API's returned results*/
 function showPosition(position) {
   console.log(position);
     x.innerHTML = "Latitude: " + position.coords.latitude + 
@@ -97,6 +101,9 @@ function showPosition(position) {
    .then(responseJson => showSunset(responseJson));
 
 }
+
+
+/* BELOW displays within the #displaymessage, data.results.sunset retrieves the time of sunset */
   function showSunset (data){
      console.log(data);
      $("#displaymessage p").html(data.results.sunset+ `<P>Here is the time of sunset on 2019-01-01 of the place you’ve chosen; meet me at this exact geographic location THREE hours prior to the indicated sunset time. If you've chosen the last 
@@ -137,13 +144,15 @@ function showSlides() {
 }
   
 $("#video").click(function(){
-    $("#videoPlayer").html(`<video controls><source src="movie.mp4" type="video/mp4"</video>`)
+    $("#videoPlayer").html(`<video controls><source src="./picture/movie.mp4" type="video/mp4"</video>`)
     console.log("hi clicked");
 });
 
 
-
-
+$("a[href='#bottom']").click(function() {
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  return false;
+});
 
 
 

@@ -208,53 +208,6 @@ form, label{
   box-shadow: none;
 }
 
-/* for the placeholder text, do an animation with typing out effect*/
-/*.pic{
-    height:30px;*/
-   /* width:30px;
-    float: auto;
-    font-size:40px;
-    transform: translate(0,0);
-
-}*/
-
-/*.pic:before{
-    content:'';
-    height:200px;
-    width:200px;
-    top:-10px;
-    left:-10px;
-    z-index:-1;
-
-}
-
-
-.pic:after{
-    content:'';
-    height:200px;
-    width:200px;
-    top:210px;
-    left:310px;
-    z-index:-1;
-
-}
-
-.pic:hover{
-    cursor:pointer;
-}
-.pic img{
-    position: relative;
-    transform: translate(0,0);
-    transition: all .4s;
-    padding-left: 4px;
-    /* ???????   why?????    border-top-color:#FF0080;
-    border-bottom-color: #FF0080;
-}
-.pic:hover img{
-    height:95%;
-    width:95%;   
-}*/
-
 
 
 
